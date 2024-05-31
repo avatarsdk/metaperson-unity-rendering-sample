@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/metaperson-unity-rendering-sample
+/Library
+/Logs
+/obj/Debug
+/Temp
+/UserSettings
+/metaperson-unity-rendering-sample.sln
+/Assembly-CSharp.csproj
+/Assembly-CSharp-Editor.csproj
+/.vsconfig
