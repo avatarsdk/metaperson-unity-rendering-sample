@@ -7,7 +7,7 @@
       "dependencies": {
         "com.unity.cloud.gltfast": "6.0.1"
       },
-      "hash": "81adffa2592ab7491ad2780e010c7205e50dfacc"
+      "hash": "bacac4e357d077841ebdd6bb24c1b229ccac8061"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
