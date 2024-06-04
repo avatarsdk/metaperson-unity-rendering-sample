@@ -64,3 +64,7 @@ The project works in **Linear** color space.
 We recommend you to set **8x Anti Aliasing** and maximum **shadows** resolution. Also, we disabled **Shadow Cascades** for this sample.
 
 ![Quality Settings](./Documentation/Images/quality_settings.png "Quality Settings")
+
+## Support
+
+If you have any questions or issues with the plugin, please contact us <support@avatarsdk.com>.
