@@ -2,11 +2,11 @@
 
 This repository contains a unity project with the exact rendering settings used in the Desktop version of the [MetaPerson Creator](https://metaperson.avatarsdk.com/). It also incorporates a sample scene to showcase avatars.
 
-The project includes several models in **FBX** with preconfigured materials. dditionally, some models are dynamically loaded at runtime in **GLB** format.
+The project includes several **FBX** models with preconfigured materials. Additionally, some models are dynamically loaded at runtime in **GLB** format.
 
 ![Sample Scene](./Documentation/Images/sample_scene.JPG "Sample Scene")
 
-The sections below describe the key configuration points that impact how the models appear.
+The sections below describe the critical configuration points that impact the models' appearance.
 
 ## Materials
 
@@ -18,8 +18,8 @@ Materials for **FBX** models are already preconfigured. You can select the sampl
 
 ### Template Materials for GLB Models
 
-For **GLB** models, template materials are used. These templates are dynamically applied to loaded models. 
-The `MetaPersonMaterialGenerator` script takes a corresponding template material for each loaded mesh, instantiates this material and sets the required textures.
+For **GLB** models, the use of template materials provides a flexible approach. These templates are dynamically applied to loaded models. 
+The `MetaPersonMaterialGenerator` script takes a corresponding template material for each loaded mesh, instantiates this material, and sets the required textures.
 You can find the template materials in the following directory: `Assets/AvatarSDK/MetaPerson/RenderingSample/Materials`. 
 
 ![Template Materials](./Documentation/Images/template_materials.JPG "Template Materials")
@@ -34,7 +34,7 @@ In this project, there are three light sources configured to enhance the visual 
 2. Back directional light.
 ![Back Light](./Documentation/Images/back_light.png "Back Light")
 
-3. Spot light that is configured with constraints to always point towards the avatar's head, ensuring that the face is well-lit and highlighted.
+3. Spotlight configured with constraints always points towards the avatar's head, ensuring that the face is well-lit and highlighted.
 ![Spot Light](./Documentation/Images/spot_light.png "Spot Light")
 
 ## Environment Lighting
@@ -51,7 +51,7 @@ The **Post-process Layer** is added for the main camera.
 
 ![Post-process Layer](./Documentation/Images/skybox.JPG "Post-process Layer")
 
-Also there is the global **Post-process Volume**:
+Also, there is the global **Post-process Volume**:
 
 ![Post-process Volume](./Documentation/Images/post_process_volume.JPG "Post-process Volume")
 
@@ -61,10 +61,10 @@ The project works in **Linear** color space.
 
 ![Rendering Settings](./Documentation/Images/rendering_settings.png "Rendeing Settings")
 
-We recommend you to set **8x Anti Aliasing** and maximum **shadows** resolution. Also, we disabled **Shadow Cascades** for this sample.
+We recommend setting **8x Anti-Aliasingg** and maximum **shadow** resolution. Also, we disabled **Shadow Cascades** for this sample.
 
 ![Quality Settings](./Documentation/Images/quality_settings.png "Quality Settings")
 
 ## Support
 
-If you have any questions or issues with this project, please contact us <support@avatarsdk.com>.
+If you have any questions or issues with this project, please contact us at <support@avatarsdk.com>.
