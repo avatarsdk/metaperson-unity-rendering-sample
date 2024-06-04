@@ -67,4 +67,4 @@ We recommend you to set **8x Anti Aliasing** and maximum **shadows** resolution.
 
 ## Support
 
-If you have any questions or issues with the plugin, please contact us <support@avatarsdk.com>.
+If you have any questions or issues with this project, please contact us <support@avatarsdk.com>.
