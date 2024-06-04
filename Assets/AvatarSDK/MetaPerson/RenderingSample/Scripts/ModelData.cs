@@ -8,9 +8,11 @@
 * Written by Itseez3D, Inc. <support@avatarsdk.com>, May 2024
 */
 
+using AvatarSDK.MetaPerson.Loader;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace AvatarSDK.MetaPerson.RenderingSample
 {
@@ -18,15 +20,78 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 	{
 		public PipelineType pipelineType;
 
-		public GameObject model;
+		public Text progressText = null;
 
 		public CameraController cameraController;
 
+		public LightController lightController;
+
+		public bool loadByUri = false;
+
+		public string modelUri = string.Empty;
+
+		private bool isModelLoadingStarted = false;
+
+		private bool isModelLoaded = false;
+
 		public void OnModelSelectionChanged(bool isOn)
 		{
-			model.SetActive(isOn);
-			if (isOn)
-				cameraController.Configure(pipelineType);
+			gameObject.SetActive(isOn);
+		}
+
+		private async void Awake()
+		{
+			cameraController.Configure(pipelineType);
+
+			if (loadByUri)
+			{
+				if (isModelLoaded)
+				{
+					lightController.ConfigureLighting(gameObject);
+					return;
+				}
+
+				if (!string.IsNullOrEmpty(modelUri))
+				{
+					if (!isModelLoadingStarted)
+					{
+						MetaPersonLoader metaPersonLoader = GetComponent<MetaPersonLoader>();
+						if (metaPersonLoader != null)
+						{
+							isModelLoadingStarted = true;
+							isModelLoaded = await metaPersonLoader.LoadModelAsync(modelUri, OnDownloadingProgressChanged);
+							if (gameObject.activeSelf)
+							{
+								if (isModelLoaded)
+								{
+									lightController.ConfigureLighting(gameObject);
+									progressText.text = string.Empty;
+								}
+								else
+									progressText.text = "Unable to load the model";
+							}
+						}
+					}
+				}
+			}
+			else
+				lightController.ConfigureLighting(gameObject);
+		}
+
+		private void OnDisable()
+		{
+			progressText.text = string.Empty;
+		}
+
+		private void OnDownloadingProgressChanged(float p)
+		{
+			if (gameObject.activeSelf)
+			{
+				if (p < 1.0f)
+					progressText.text = string.Format("Downloading: {0} %", (int)(p * 100.0f));
+				else
+					progressText.text = "Loading model...";
+			}
 		}
 	}
 }

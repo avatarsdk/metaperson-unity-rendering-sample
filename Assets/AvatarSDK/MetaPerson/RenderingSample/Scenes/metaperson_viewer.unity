@@ -229,7 +229,6 @@ GameObject:
   - component: {fileID: 142981766}
   - component: {fileID: 142981765}
   - component: {fileID: 142981764}
-  - component: {fileID: 142981763}
   m_Layer: 5
   m_Name: Model9
   m_TagString: Untagged
@@ -259,21 +258,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &142981763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 142981761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipelineType: 1
-  model: {fileID: 1084335969}
-  cameraController: {fileID: 321540920}
 --- !u!114 &142981764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,7 +318,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 142981763}
+      - m_Target: {fileID: 1084335975}
         m_TargetAssemblyTypeName: AvatarSDK.MetaPerson.RenderingSample.ModelData,
           Assembly-CSharp
         m_MethodName: OnModelSelectionChanged
@@ -1124,7 +1108,6 @@ GameObject:
   - component: {fileID: 479357924}
   - component: {fileID: 479357923}
   - component: {fileID: 479357922}
-  - component: {fileID: 479357921}
   m_Layer: 5
   m_Name: Model4
   m_TagString: Untagged
@@ -1154,21 +1137,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &479357921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 479357919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipelineType: 1
-  model: {fileID: 1911900825}
-  cameraController: {fileID: 321540920}
 --- !u!114 &479357922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1229,7 +1197,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 479357921}
+      - m_Target: {fileID: 1911900828}
         m_TargetAssemblyTypeName: AvatarSDK.MetaPerson.RenderingSample.ModelData,
           Assembly-CSharp
         m_MethodName: OnModelSelectionChanged
@@ -1821,10 +1789,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 743339433}
-  - component: {fileID: 743339437}
   - component: {fileID: 743339436}
-  - component: {fileID: 743339435}
   - component: {fileID: 743339434}
+  - component: {fileID: 743339438}
   m_Layer: 0
   m_Name: model8
   m_TagString: Untagged
@@ -1861,28 +1828,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   excludedUIObjects: []
   detectMovementsOverOtherGameObjects: 0
---- !u!114 &743339435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743339432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0dd6eeec39de6d45a48305dfb94db70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultMaterial: {fileID: 2100000, guid: d90bc53dad64632409d636315753a19a, type: 2}
-  bodyMaterial: {fileID: 2100000, guid: 74728b2c3089ed740875660f952477eb, type: 2}
-  headMaterial: {fileID: 2100000, guid: 0c171fd8e44680d4ca1b45df961e8176, type: 2}
-  eyelashesMaterial: {fileID: 2100000, guid: 3cb2a2b7ba9d22c43bd0074dc016ead2, type: 2}
-  corneaMaterial: {fileID: 2100000, guid: c01db0511ca38d343a9cd4d36132bb0f, type: 2}
-  eyeballMaterial: {fileID: 0}
-  teethMaterial: {fileID: 2100000, guid: d9d129c1e0be9694cbde58dac4a2ba80, type: 2}
-  outfitMaterial: {fileID: 2100000, guid: 116ab7a4db8d8594694d3a15ffccbd97, type: 2}
-  haircutMaterial: {fileID: 2100000, guid: b9f107f51bf7f2e4e9d7baa36f124901, type: 2}
-  glassesMaterial: {fileID: 2100000, guid: 3d79b81415f841f4f84a1fe47434c529, type: 2}
 --- !u!114 &743339436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1897,11 +1842,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelUri: 
   avatarObject: {fileID: 743339432}
-  materialGenerator: {fileID: 743339435}
+  materialGenerator: {fileID: 1291032301}
   cacheModels: 0
   configureAnimator: 1
   animatorController: {fileID: 9100000, guid: 20a95633b66cbc24c9635223a675ae09, type: 2}
---- !u!114 &743339437
+--- !u!114 &743339438
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1910,12 +1855,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 743339432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93c1ab7e8cbe3ee4db68f6e6194730cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelUri: https://metaperson.avatarsdk.com/avatars/2d50457d-0570-4ecc-bfea-49cac6467a5b/model.glb
-  metaPersonLoader: {fileID: 743339436}
+  pipelineType: 0
   progressText: {fileID: 892349355}
+  cameraController: {fileID: 321540920}
+  lightController: {fileID: 1440827532}
+  loadByUri: 1
+  modelUri: https://metaperson.avatarsdk.com/avatars/2d50457d-0570-4ecc-bfea-49cac6467a5b/model.glb
 --- !u!1 &751405889
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,7 +1877,6 @@ GameObject:
   - component: {fileID: 751405894}
   - component: {fileID: 751405893}
   - component: {fileID: 751405892}
-  - component: {fileID: 751405891}
   m_Layer: 5
   m_Name: Model6
   m_TagString: Untagged
@@ -1959,21 +1906,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &751405891
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751405889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipelineType: 1
-  model: {fileID: 1292172245}
-  cameraController: {fileID: 321540920}
 --- !u!114 &751405892
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2034,7 +1966,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 751405891}
+      - m_Target: {fileID: 1292172252}
         m_TargetAssemblyTypeName: AvatarSDK.MetaPerson.RenderingSample.ModelData,
           Assembly-CSharp
         m_MethodName: OnModelSelectionChanged
@@ -2556,7 +2488,6 @@ GameObject:
   - component: {fileID: 986060514}
   - component: {fileID: 986060513}
   - component: {fileID: 986060512}
-  - component: {fileID: 986060511}
   m_Layer: 5
   m_Name: Model5
   m_TagString: Untagged
@@ -2586,21 +2517,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &986060511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986060509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipelineType: 0
-  model: {fileID: 1326630861}
-  cameraController: {fileID: 321540920}
 --- !u!114 &986060512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2661,7 +2577,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 986060511}
+      - m_Target: {fileID: 1326630864}
         m_TargetAssemblyTypeName: AvatarSDK.MetaPerson.RenderingSample.ModelData,
           Assembly-CSharp
         m_MethodName: OnModelSelectionChanged
@@ -2726,7 +2642,6 @@ GameObject:
   - component: {fileID: 1036821251}
   - component: {fileID: 1036821250}
   - component: {fileID: 1036821249}
-  - component: {fileID: 1036821248}
   m_Layer: 5
   m_Name: Model8
   m_TagString: Untagged
@@ -2756,21 +2671,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1036821248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036821246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipelineType: 0
-  model: {fileID: 743339432}
-  cameraController: {fileID: 321540920}
 --- !u!114 &1036821249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2831,7 +2731,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1036821248}
+      - m_Target: {fileID: 743339438}
         m_TargetAssemblyTypeName: AvatarSDK.MetaPerson.RenderingSample.ModelData,
           Assembly-CSharp
         m_MethodName: OnModelSelectionChanged
@@ -3107,10 +3007,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1084335970}
-  - component: {fileID: 1084335974}
   - component: {fileID: 1084335973}
-  - component: {fileID: 1084335972}
   - component: {fileID: 1084335971}
+  - component: {fileID: 1084335975}
   m_Layer: 0
   m_Name: model9
   m_TagString: Untagged
@@ -3147,28 +3046,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   excludedUIObjects: []
   detectMovementsOverOtherGameObjects: 0
---- !u!114 &1084335972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084335969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0dd6eeec39de6d45a48305dfb94db70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultMaterial: {fileID: 2100000, guid: d90bc53dad64632409d636315753a19a, type: 2}
-  bodyMaterial: {fileID: 2100000, guid: 74728b2c3089ed740875660f952477eb, type: 2}
-  headMaterial: {fileID: 2100000, guid: 0c171fd8e44680d4ca1b45df961e8176, type: 2}
-  eyelashesMaterial: {fileID: 2100000, guid: 3cb2a2b7ba9d22c43bd0074dc016ead2, type: 2}
-  corneaMaterial: {fileID: 2100000, guid: c01db0511ca38d343a9cd4d36132bb0f, type: 2}
-  eyeballMaterial: {fileID: 0}
-  teethMaterial: {fileID: 2100000, guid: d9d129c1e0be9694cbde58dac4a2ba80, type: 2}
-  outfitMaterial: {fileID: 2100000, guid: 116ab7a4db8d8594694d3a15ffccbd97, type: 2}
-  haircutMaterial: {fileID: 2100000, guid: b9f107f51bf7f2e4e9d7baa36f124901, type: 2}
-  glassesMaterial: {fileID: 2100000, guid: 3d79b81415f841f4f84a1fe47434c529, type: 2}
 --- !u!114 &1084335973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3183,11 +3060,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelUri: 
   avatarObject: {fileID: 1084335969}
-  materialGenerator: {fileID: 1084335972}
+  materialGenerator: {fileID: 1291032301}
   cacheModels: 0
   configureAnimator: 1
   animatorController: {fileID: 9100000, guid: 20a95633b66cbc24c9635223a675ae09, type: 2}
---- !u!114 &1084335974
+--- !u!114 &1084335975
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3196,12 +3073,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1084335969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93c1ab7e8cbe3ee4db68f6e6194730cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelUri: https://metaperson.avatarsdk.com/avatars/cc35cf0c-2754-4707-bab4-4b41d701a3d1/model.glb
-  metaPersonLoader: {fileID: 1084335973}
+  pipelineType: 1
   progressText: {fileID: 892349355}
+  cameraController: {fileID: 321540920}
+  lightController: {fileID: 1440827532}
+  loadByUri: 1
+  modelUri: https://metaperson.avatarsdk.com/avatars/cc35cf0c-2754-4707-bab4-4b41d701a3d1/model.glb
 --- !u!1 &1186028632
 GameObject:
   m_ObjectHideFlags: 0
@@ -3291,7 +3171,6 @@ GameObject:
   - component: {fileID: 1232214983}
   - component: {fileID: 1232214982}
   - component: {fileID: 1232214981}
-  - component: {fileID: 1232214980}
   m_Layer: 5
   m_Name: Model3
   m_TagString: Untagged
@@ -3321,21 +3200,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1232214980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232214978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipelineType: 0
-  model: {fileID: 2086594933}
-  cameraController: {fileID: 321540920}
 --- !u!114 &1232214981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3396,7 +3260,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1232214980}
+      - m_Target: {fileID: 2086594938}
         m_TargetAssemblyTypeName: AvatarSDK.MetaPerson.RenderingSample.ModelData,
           Assembly-CSharp
         m_MethodName: OnModelSelectionChanged
@@ -3461,7 +3325,6 @@ GameObject:
   - component: {fileID: 1282568357}
   - component: {fileID: 1282568356}
   - component: {fileID: 1282568355}
-  - component: {fileID: 1282568354}
   m_Layer: 5
   m_Name: Model2
   m_TagString: Untagged
@@ -3491,21 +3354,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1282568354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1282568352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipelineType: 1
-  model: {fileID: 1496306902}
-  cameraController: {fileID: 321540920}
 --- !u!114 &1282568355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3566,7 +3414,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1282568354}
+      - m_Target: {fileID: 1496306906}
         m_TargetAssemblyTypeName: AvatarSDK.MetaPerson.RenderingSample.ModelData,
           Assembly-CSharp
         m_MethodName: OnModelSelectionChanged
@@ -3618,6 +3466,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282568352}
   m_CullTransparentMesh: 0
+--- !u!1 &1291032300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1291032302}
+  - component: {fileID: 1291032301}
+  m_Layer: 0
+  m_Name: MetaPersonMaterialGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1291032301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291032300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0dd6eeec39de6d45a48305dfb94db70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultMaterial: {fileID: 2100000, guid: d90bc53dad64632409d636315753a19a, type: 2}
+  bodyMaterial: {fileID: 2100000, guid: 74728b2c3089ed740875660f952477eb, type: 2}
+  headMaterial: {fileID: 2100000, guid: 0c171fd8e44680d4ca1b45df961e8176, type: 2}
+  eyelashesMaterial: {fileID: 2100000, guid: 3cb2a2b7ba9d22c43bd0074dc016ead2, type: 2}
+  corneaMaterial: {fileID: 2100000, guid: c01db0511ca38d343a9cd4d36132bb0f, type: 2}
+  eyeballMaterial: {fileID: 0}
+  teethMaterial: {fileID: 2100000, guid: d9d129c1e0be9694cbde58dac4a2ba80, type: 2}
+  outfitMaterial: {fileID: 2100000, guid: 116ab7a4db8d8594694d3a15ffccbd97, type: 2}
+  haircutMaterial: {fileID: 2100000, guid: b9f107f51bf7f2e4e9d7baa36f124901, type: 2}
+  glassesMaterial: {fileID: 2100000, guid: 3d79b81415f841f4f84a1fe47434c529, type: 2}
+--- !u!4 &1291032302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291032300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.28877765, y: 1.3053029, z: -0.76457053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1292172245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3627,10 +3529,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1292172246}
-  - component: {fileID: 1292172251}
   - component: {fileID: 1292172249}
-  - component: {fileID: 1292172250}
   - component: {fileID: 1292172247}
+  - component: {fileID: 1292172252}
   m_Layer: 0
   m_Name: model6
   m_TagString: Untagged
@@ -3681,11 +3582,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelUri: 
   avatarObject: {fileID: 1292172245}
-  materialGenerator: {fileID: 1292172250}
+  materialGenerator: {fileID: 1291032301}
   cacheModels: 0
   configureAnimator: 1
   animatorController: {fileID: 9100000, guid: 20a95633b66cbc24c9635223a675ae09, type: 2}
---- !u!114 &1292172250
+--- !u!114 &1292172252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3694,34 +3595,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292172245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0dd6eeec39de6d45a48305dfb94db70, type: 3}
+  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaultMaterial: {fileID: 2100000, guid: d90bc53dad64632409d636315753a19a, type: 2}
-  bodyMaterial: {fileID: 2100000, guid: 74728b2c3089ed740875660f952477eb, type: 2}
-  headMaterial: {fileID: 2100000, guid: 0c171fd8e44680d4ca1b45df961e8176, type: 2}
-  eyelashesMaterial: {fileID: 2100000, guid: 3cb2a2b7ba9d22c43bd0074dc016ead2, type: 2}
-  corneaMaterial: {fileID: 2100000, guid: c01db0511ca38d343a9cd4d36132bb0f, type: 2}
-  eyeballMaterial: {fileID: 0}
-  teethMaterial: {fileID: 2100000, guid: d9d129c1e0be9694cbde58dac4a2ba80, type: 2}
-  outfitMaterial: {fileID: 2100000, guid: 116ab7a4db8d8594694d3a15ffccbd97, type: 2}
-  haircutMaterial: {fileID: 2100000, guid: b9f107f51bf7f2e4e9d7baa36f124901, type: 2}
-  glassesMaterial: {fileID: 2100000, guid: 3d79b81415f841f4f84a1fe47434c529, type: 2}
---- !u!114 &1292172251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1292172245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93c1ab7e8cbe3ee4db68f6e6194730cd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  modelUri: https://metaperson.avatarsdk.com/avatars/5fd1c5af-75e1-4451-9e31-3c245f72bf83/model.glb
-  metaPersonLoader: {fileID: 1292172249}
+  pipelineType: 1
   progressText: {fileID: 892349355}
+  cameraController: {fileID: 321540920}
+  lightController: {fileID: 1440827532}
+  loadByUri: 1
+  modelUri: https://metaperson.avatarsdk.com/avatars/5fd1c5af-75e1-4451-9e31-3c245f72bf83/model.glb
 --- !u!1001 &1326630859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3867,6 +3749,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   excludedUIObjects: []
   detectMovementsOverOtherGameObjects: 0
+--- !u!114 &1326630864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326630861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pipelineType: 0
+  progressText: {fileID: 892349355}
+  cameraController: {fileID: 321540920}
+  lightController: {fileID: 1440827532}
+  loadByUri: 0
+  modelUri: 
 --- !u!1 &1405796298
 GameObject:
   m_ObjectHideFlags: 0
@@ -3952,6 +3852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1440827531}
+  - component: {fileID: 1440827532}
   m_Layer: 0
   m_Name: LIGHT
   m_TagString: Untagged
@@ -3977,6 +3878,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1440827532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440827530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76a6fba64a6a8c542abbc46c7509ecd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bounceLight: {fileID: 2071437938}
 --- !u!1 &1465847659
 GameObject:
   m_ObjectHideFlags: 0
@@ -4080,6 +3994,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   excludedUIObjects: []
   detectMovementsOverOtherGameObjects: 0
+--- !u!114 &1496306906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496306902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pipelineType: 1
+  progressText: {fileID: 892349355}
+  cameraController: {fileID: 321540920}
+  lightController: {fileID: 1440827532}
+  loadByUri: 0
+  modelUri: 
 --- !u!1 &1503055665
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,10 +4335,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1647988471}
-  - component: {fileID: 1647988475}
   - component: {fileID: 1647988474}
-  - component: {fileID: 1647988473}
   - component: {fileID: 1647988472}
+  - component: {fileID: 1647988476}
   m_Layer: 0
   m_Name: model7
   m_TagString: Untagged
@@ -4443,28 +4374,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   excludedUIObjects: []
   detectMovementsOverOtherGameObjects: 0
---- !u!114 &1647988473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647988470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b0dd6eeec39de6d45a48305dfb94db70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  defaultMaterial: {fileID: 2100000, guid: d90bc53dad64632409d636315753a19a, type: 2}
-  bodyMaterial: {fileID: 2100000, guid: 74728b2c3089ed740875660f952477eb, type: 2}
-  headMaterial: {fileID: 2100000, guid: 0c171fd8e44680d4ca1b45df961e8176, type: 2}
-  eyelashesMaterial: {fileID: 2100000, guid: 3cb2a2b7ba9d22c43bd0074dc016ead2, type: 2}
-  corneaMaterial: {fileID: 2100000, guid: c01db0511ca38d343a9cd4d36132bb0f, type: 2}
-  eyeballMaterial: {fileID: 0}
-  teethMaterial: {fileID: 2100000, guid: d9d129c1e0be9694cbde58dac4a2ba80, type: 2}
-  outfitMaterial: {fileID: 2100000, guid: 116ab7a4db8d8594694d3a15ffccbd97, type: 2}
-  haircutMaterial: {fileID: 2100000, guid: b9f107f51bf7f2e4e9d7baa36f124901, type: 2}
-  glassesMaterial: {fileID: 2100000, guid: 3d79b81415f841f4f84a1fe47434c529, type: 2}
 --- !u!114 &1647988474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4479,11 +4388,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelUri: 
   avatarObject: {fileID: 1647988470}
-  materialGenerator: {fileID: 1647988473}
+  materialGenerator: {fileID: 1291032301}
   cacheModels: 0
   configureAnimator: 1
   animatorController: {fileID: 9100000, guid: 20a95633b66cbc24c9635223a675ae09, type: 2}
---- !u!114 &1647988475
+--- !u!114 &1647988476
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4492,12 +4401,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1647988470}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93c1ab7e8cbe3ee4db68f6e6194730cd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelUri: https://metaperson.avatarsdk.com/avatars/8284fc74-8d2b-42e2-a000-0e578c56d71b/model.glb
-  metaPersonLoader: {fileID: 1647988474}
+  pipelineType: 0
   progressText: {fileID: 892349355}
+  cameraController: {fileID: 321540920}
+  lightController: {fileID: 1440827532}
+  loadByUri: 1
+  modelUri: https://metaperson.avatarsdk.com/avatars/8284fc74-8d2b-42e2-a000-0e578c56d71b/model.glb
 --- !u!1 &1664622580
 GameObject:
   m_ObjectHideFlags: 0
@@ -4822,7 +4734,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1834320577
 GameObject:
@@ -5149,6 +5061,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   excludedUIObjects: []
   detectMovementsOverOtherGameObjects: 0
+--- !u!114 &1911900828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911900825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pipelineType: 1
+  progressText: {fileID: 892349355}
+  cameraController: {fileID: 321540920}
+  lightController: {fileID: 1440827532}
+  loadByUri: 0
+  modelUri: 
 --- !u!1 &1917713775
 GameObject:
   m_ObjectHideFlags: 0
@@ -5441,6 +5371,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   excludedUIObjects: []
   detectMovementsOverOtherGameObjects: 0
+--- !u!114 &2010017781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 673822131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pipelineType: 0
+  progressText: {fileID: 892349355}
+  cameraController: {fileID: 321540920}
+  lightController: {fileID: 1440827532}
+  loadByUri: 0
+  modelUri: 
 --- !u!1 &2024677354
 GameObject:
   m_ObjectHideFlags: 0
@@ -5454,7 +5402,6 @@ GameObject:
   - component: {fileID: 2024677359}
   - component: {fileID: 2024677358}
   - component: {fileID: 2024677357}
-  - component: {fileID: 2024677356}
   m_Layer: 5
   m_Name: Model7
   m_TagString: Untagged
@@ -5484,21 +5431,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2024677356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024677354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipelineType: 0
-  model: {fileID: 1647988470}
-  cameraController: {fileID: 321540920}
 --- !u!114 &2024677357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5559,7 +5491,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2024677356}
+      - m_Target: {fileID: 1647988476}
         m_TargetAssemblyTypeName: AvatarSDK.MetaPerson.RenderingSample.ModelData,
           Assembly-CSharp
         m_MethodName: OnModelSelectionChanged
@@ -5778,6 +5710,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   excludedUIObjects: []
   detectMovementsOverOtherGameObjects: 0
+--- !u!114 &2086594938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086594933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pipelineType: 0
+  progressText: {fileID: 892349355}
+  cameraController: {fileID: 321540920}
+  lightController: {fileID: 1440827532}
+  loadByUri: 0
+  modelUri: 
 --- !u!114 &379979454261284062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5960,7 +5910,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6055568809876268844}
+      - m_Target: {fileID: 2010017781}
         m_TargetAssemblyTypeName: AvatarSDK.MetaPerson.RenderingSample.ModelData,
           Assembly-CSharp
         m_MethodName: OnModelSelectionChanged
@@ -6009,7 +5959,6 @@ GameObject:
   - component: {fileID: 6055568809876268840}
   - component: {fileID: 6055568809876268841}
   - component: {fileID: 379979454261284062}
-  - component: {fileID: 6055568809876268844}
   m_Layer: 5
   m_Name: Model1
   m_TagString: Untagged
@@ -6017,21 +5966,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &6055568809876268844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6055568809876268843}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4582ff5fabe97634798a3294e3e20ef5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pipelineType: 0
-  model: {fileID: 673822131}
-  cameraController: {fileID: 321540920}
 --- !u!224 &7804456884868367775
 RectTransform:
   m_ObjectHideFlags: 0
