@@ -8,7 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/AvatarSDK/MetaPerson/RenderingSample/Scenes/metaperson_viewer.unity
     guid: 766aa9c5ce8613d40b10fc1c58c66ba9
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}
