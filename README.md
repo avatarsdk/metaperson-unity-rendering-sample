@@ -29,12 +29,15 @@ You can find the template materials in the following directory: `Assets/AvatarSD
 In this project, there are three light sources configured to enhance the visual quality of the avatars:
 
 1. Front directional light.
+   
 ![Front Light](./Documentation/Images/front_light.png "Front Light")
 
 2. Back directional light.
+   
 ![Back Light](./Documentation/Images/back_light.png "Back Light")
 
 3. Spotlight configured with constraints always points towards the avatar's head, ensuring that the face is well-lit and highlighted.
+   
 ![Spot Light](./Documentation/Images/spot_light.png "Spot Light")
 
 ## Environment Lighting
