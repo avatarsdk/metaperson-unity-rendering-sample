@@ -24,9 +24,9 @@ You can find the template materials in the following directory: `Assets/AvatarSD
 
 ![Template Materials](./Documentation/Images/template_materials.JPG "Template Materials")
 
-## Light Sources
+## Default Light Sources
 
-In this project, there are three light sources configured to enhance the visual quality of the avatars:
+The default lighting contains three light sources configured to enhance the visual quality of the avatars:
 
 1. Front directional light.
    
@@ -48,9 +48,9 @@ A special **skybox** is used as an environment with the following settings:
 
 ![Skybox](./Documentation/Images/skybox.JPG "Skybox")
 
-## Post-Processing
+## Default Post-Processing
 
-The **Post-process Layer** is added for the main camera.
+The **Post-process Layer** is configured as follows:
 
 ![Post-process Layer](./Documentation/Images/skybox.JPG "Post-process Layer")
 
@@ -67,6 +67,11 @@ The project works in **Linear** color space.
 We recommend setting **8x Anti-Aliasingg** and maximum **shadow** resolution. Also, we disabled **Shadow Cascades** for this sample.
 
 ![Quality Settings](./Documentation/Images/quality_settings.png "Quality Settings")
+
+## Additional Lighting Setups
+
+In addition to the default lighting, there are six more setups that use another **Post-process Volume** and unique light sources.
+You can switch between them to see the changes.
 
 ## Support
 
