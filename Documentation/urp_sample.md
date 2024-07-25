@@ -1,6 +1,6 @@
 # MetaPerson - URP Rendering Sample
 
-The **URP Rendering Sample** can be found in the `metaperson_rendering_urp` directory.
+The **URP Rendering Sample** can be found in the [`metaperson_rendering_urp`](./../../main/metaperson_rendering_urp) directory.
 
 The critical configuration points that impact the models' appearance are described below.
 
