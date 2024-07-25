@@ -1,6 +1,6 @@
 # MetaPerson - Built-In Rendering Sample
 
-The **Built-In Rendering Sample** can be found in the `metaperson_rendering_builtin` directory.
+The **Built-In Rendering Sample** can be found in the [`metaperson_rendering_builtin`](./../../main/metaperson_rendering_builtin) directory.
 
 The critical configuration points that impact the models' appearance are described below.
 
