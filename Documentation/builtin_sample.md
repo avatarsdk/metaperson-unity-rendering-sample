@@ -18,6 +18,14 @@ You can find the template materials in the following directory: `Assets/AvatarSD
 
 ![Template Materials](./Images/template_materials.JPG "Template Materials")
 
+## Camera
+
+The Field of View (FOV) depends on the camera's position. When the camera is pointed at the avatar's head, the FOV is set to 40. When viewing the full-body model, the FOV is set to 27.
+
+Other camera settings are shown below:
+
+![Camera Settings](./Images/camera_settings.JPG "Camera Settings")
+
 ## Default Light Sources
 
 The default lighting contains three light sources configured to enhance the visual quality of the avatars:
@@ -46,7 +54,7 @@ A special **skybox** is used as an environment with the following settings:
 
 The **Post-process Layer** is configured as follows:
 
-![Post-process Layer](./Images/skybox.JPG "Post-process Layer")
+![Post-process Layer](./Images/post_process_layer.JPG "Post-process Layer")
 
 Also, there is the global **Post-process Volume**:
 
