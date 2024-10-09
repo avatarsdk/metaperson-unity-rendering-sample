@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: glasses
-  m_Shader: {fileID: 4800000, guid: e6fedd16a9462d045a7a61ccc0455dbd, type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ValidKeywords:
   - _ALPHABLEND_ON
   - _METALLICGLOSSMAP
@@ -44,11 +44,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: bc1826b3838a53844829a11e7f9fa09a, type: 3}
+        m_Texture: {fileID: 2800000, guid: 63a4795bc800fb14b9aedea2dd5b8f6e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 453b0e559d7581b4b9e399e1f649efcf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 01395a6e5a1bc8b4c957a5eda3796bcd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:

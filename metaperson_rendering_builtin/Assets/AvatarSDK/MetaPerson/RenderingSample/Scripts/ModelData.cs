@@ -47,7 +47,7 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 			{
 				if (isModelLoaded)
 				{
-					lightController.ConfigureLighting(gameObject);
+					lightController.ConfigureLighting(gameObject, pipelineType);
 					return;
 				}
 
@@ -64,7 +64,7 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 							{
 								if (isModelLoaded)
 								{
-									lightController.ConfigureLighting(gameObject);
+									lightController.ConfigureLighting(gameObject, pipelineType);
 									progressText.text = string.Empty;
 								}
 								else
@@ -75,7 +75,7 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 				}
 			}
 			else
-				lightController.ConfigureLighting(gameObject);
+				lightController.ConfigureLighting(gameObject, pipelineType);
 		}
 
 		private void OnDisable()

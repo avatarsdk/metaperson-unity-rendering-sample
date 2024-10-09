@@ -17,9 +17,17 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 {
 	public class LightController : MonoBehaviour
 	{
-		public GameObject bounceLight = null;
+		public GameObject bounceLight;
 
-		public void ConfigureLighting(GameObject avatarObject)
+		public GameObject hairLight;
+
+		public Transform jewelleryReflectionProbesTransform;
+
+		public Vector3 maleHairLightPosition;
+
+		public Vector3 femaleHairLightPosition;
+
+		public void ConfigureLighting(GameObject avatarObject, PipelineType pipelineType)
 		{
 			GameObject hipsNode = FindSubobjectByName(avatarObject, "Hips");
 			GameObject headTopNode = FindSubobjectByName(avatarObject, "HeadTop_End");
@@ -27,6 +35,33 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 			parentConstraint.SetSource(0, new ConstraintSource() { sourceTransform = hipsNode.transform, weight = 1.0f });
 			LookAtConstraint lookAtConstraint = bounceLight.GetComponent<LookAtConstraint>();
 			lookAtConstraint.SetSource(0, new ConstraintSource() { sourceTransform = headTopNode.transform, weight = 1.0f });
+
+			ParentConstraint hairLightParentConstraint = hairLight.GetComponent<ParentConstraint>();
+			hairLight.transform.position = pipelineType == PipelineType.META_PERSON_2_MALE ? maleHairLightPosition : femaleHairLightPosition;
+
+			Vector3 localPositionOffset = headTopNode.transform.InverseTransformPoint(hairLight.transform.position);
+			Quaternion localRotationOffset = Quaternion.Inverse(headTopNode.transform.rotation) * hairLight.transform.rotation;
+
+			hairLightParentConstraint.SetSource(0, new ConstraintSource() { sourceTransform = headTopNode.transform, weight = 1.0f });
+
+			hairLightParentConstraint.SetTranslationOffset(0, localPositionOffset);
+			hairLightParentConstraint.SetRotationOffset(0, localRotationOffset.eulerAngles);
+
+			GameObject earringsObjects = FindSubobjectByName(avatarObject, "earring");
+			if (earringsObjects != null)
+			{
+				SkinnedMeshRenderer earringsMeshRenderer = earringsObjects.GetComponentInChildren<SkinnedMeshRenderer>();
+				if (earringsMeshRenderer != null)
+					earringsMeshRenderer.probeAnchor = jewelleryReflectionProbesTransform;
+			}
+
+			GameObject necklaceObject = FindSubobjectByName(avatarObject, "necklace");
+			if (necklaceObject != null)
+			{
+				SkinnedMeshRenderer necklaceMeshRenderer = necklaceObject.GetComponentInChildren<SkinnedMeshRenderer>();
+				if (necklaceMeshRenderer != null)
+					necklaceMeshRenderer.probeAnchor = jewelleryReflectionProbesTransform;
+			}
 		}
 
 		private GameObject FindSubobjectByName(GameObject obj, string name, bool includeInactive = true)
