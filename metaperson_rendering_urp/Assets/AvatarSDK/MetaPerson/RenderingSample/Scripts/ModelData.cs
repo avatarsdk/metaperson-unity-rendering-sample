@@ -24,6 +24,8 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 
 		public CameraController cameraController;
 
+		public LightController lightController;
+
 		public bool loadByUri = false;
 
 		public string modelUri = string.Empty;
@@ -44,7 +46,10 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 			if (loadByUri)
 			{
 				if (isModelLoaded)
+				{
+					lightController.ConfigureLighting(gameObject, pipelineType);
 					return;
+				}
 
 				if (!string.IsNullOrEmpty(modelUri))
 				{
@@ -59,6 +64,7 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 							{
 								if (isModelLoaded)
 								{
+									lightController.ConfigureLighting(gameObject, pipelineType);
 									progressText.text = string.Empty;
 								}
 								else
@@ -68,6 +74,8 @@ namespace AvatarSDK.MetaPerson.RenderingSample
 					}
 				}
 			}
+			else
+				lightController.ConfigureLighting(gameObject, pipelineType);
 		}
 
 		private void OnDisable()

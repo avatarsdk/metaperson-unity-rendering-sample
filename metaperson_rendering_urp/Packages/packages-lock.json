@@ -7,14 +7,14 @@
       "dependencies": {
         "com.unity.cloud.gltfast": "6.7.0"
       },
-      "hash": "e3899dc507c51df8a926b2730644ff32ec4918b1"
+      "hash": "12590af36be768d3bb301eb9d34af70879e545de"
     },
     "com.avatarsdk.metaperson.loader.urp": {
       "version": "https://github.com/avatarsdk/metaperson-loader-unity.git?path=/URP~",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "6df074aee85992394a94f982d39d8ef876c0e0db"
+      "hash": "12590af36be768d3bb301eb9d34af70879e545de"
     },
     "com.unity.2d.sprite": {
       "version": "1.0.0",
@@ -42,11 +42,11 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.mathematics": "1.3.1",
         "com.unity.burst": "1.8.4",
-        "com.unity.collections": "1.5.1"
+        "com.unity.collections": "1.5.1",
+        "com.unity.mathematics": "1.3.1",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -63,8 +63,8 @@
       "source": "registry",
       "dependencies": {
         "com.unity.burst": "1.6.6",
-        "com.unity.nuget.mono-cecil": "1.11.4",
-        "com.unity.test-framework": "1.1.31"
+        "com.unity.test-framework": "1.1.31",
+        "com.unity.nuget.mono-cecil": "1.11.4"
       },
       "url": "https://packages.unity.com"
     },
@@ -246,9 +246,9 @@
       "depth": 0,
       "source": "registry",
       "dependencies": {
+        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.director": "1.0.0",
         "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.audio": "1.0.0",
         "com.unity.modules.particlesystem": "1.0.0"
       },
       "url": "https://packages.unity.com"
